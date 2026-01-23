@@ -2,7 +2,7 @@
 
 **Sr. Technical Program Manager @ Scala Computing**
 
-I ship complex software programs—network simulation, distributed systems, AI workloads at data center scale. 
+I ship complex software programs: network simulation, distributed systems, AI workloads at data center scale. 
 Before I managed programs, I wrote code (C++, C#, MATLAB, APIs on Azure/SAP).
 
 When I'm not aligning roadmaps, I build side projects.
