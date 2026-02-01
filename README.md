@@ -4,9 +4,9 @@
 
 I drive complex software programs from zero to shipped — network simulation, distributed systems, AI infrastructure at data center scale. Before I ran programs, I wrote code (C++, C#, MATLAB, APIs on Azure/SAP).
 
-Off the clock, I build things in Rust.
+When I'm not aligning roadmaps, I'm designing and building stuff.
 
-Current Faves: ![Claude Code](https://img.shields.io/badge/Claude-Code-cc785c?logo=anthropic&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white) ![Ratatui](https://img.shields.io/badge/Ratatui-TUI-yellow)
+![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white) ![Ratatui](https://img.shields.io/badge/Ratatui-TUI-yellow) ![Claude Code](https://img.shields.io/badge/Claude-Code-cc785c?logo=anthropic&logoColor=white)
 
 ### Currently
 - Driving delivery of Scala's network simulation platform
