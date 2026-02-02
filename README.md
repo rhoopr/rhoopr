@@ -1,23 +1,18 @@
 # Hey, I'm Rob 👋
 
-**Sr. Technical Program Manager @ Scala Computing**
+**Sr. Technical Program Manager @ Scala Computing** — I ship complex software. Network simulation, distributed systems, AI infra at data center scale.
 
-I drive complex software programs from zero to shipped — network simulation, distributed systems, AI infrastructure at data center scale. Before I ran programs, I wrote code (C++, C#, MATLAB, APIs on Azure/SAP).
+Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I still like to stay close to the code.
 
-When I'm not aligning roadmaps, I'm designing and building stuff.
+### What I'm building
 
-![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white) ![Ratatui](https://img.shields.io/badge/Ratatui-TUI-yellow) ![Claude Code](https://img.shields.io/badge/Claude-Code-cc785c?logo=anthropic&logoColor=white)
+![Rust](https://shields.io/badge/-Rust-2D2B28?logo=rust&logoColor=DEA584) [![Claude](https://img.shields.io/badge/Claude%20Code-2D2B28?logo=claude)](#)
 
-### Currently
-- Driving delivery of Scala's network simulation platform
-- Building [icloudpd-rs](https://github.com/rhoopr/icloudpd-rs) — a Rust rewrite of icloud-photos-downloader
-- Tinkering with [bambutop](https://github.com/rhoopr/bambutop) — a TUI for monitoring Bambu Lab 3D printers
+- **[icloudpd-rs](https://github.com/rhoopr/icloudpd-rs)** — A Rust rewrite of icloud-photos-downloader. Single binary, parallel downloads, built to run as a daemon with SQLite state tracking.
+- **[bambutop](https://github.com/rhoopr/bambutop)** — A terminal UI for monitoring Bambu Lab 3D printers.
 
 ### Background
-- 10+ years across enterprise, startups, and infrastructure software
-- Started as a developer, grew into program leadership
-- B.S. Information Science & Technology, Penn State
 
-### Links
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rwh)
-[![Email](https://img.shields.io/badge/Email-tpm@robhooper.xyz-EA4335?logo=gmail&logoColor=white)](mailto:tpm@robhooper.xyz)
+10+ years across enterprise, startups, and infrastructure software. Started as a developer, grew into program leadership. Penn State IST.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/Email-tpm@robhooper.xyz-EA4335?logo=gmail&logoColor=white)](mailto:tpm@robhooper.xyz)
