@@ -15,4 +15,4 @@ Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I stil
 
 10+ years across SaaS, startups, and infrastructure software. Started as a developer, grew into program leadership. Penn State IST.
 
-[![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/tpm@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:tpm@robhooper.xyz)
+[![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/github@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:github@robhooper.xyz)
