@@ -10,7 +10,7 @@ Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I stil
 
 ![Rust](https://shields.io/badge/-Rust-2D2B28?logo=rust&logoColor=DEA584) [![Claude](https://img.shields.io/badge/Claude%20Code-2D2B28?logo=claude)](#)
 
-- **[icloudpd-rs](https://github.com/rhoopr/icloudpd-rs)** — A Rust rewrite of icloud-photos-downloader. Single binary, parallel downloads, built to run as a daemon with SQLite state tracking.
+- **[icloudpd-rs](https://github.com/rhoopr/icloudpd-rs)** — A Rust rewrite of icloudpd. Single binary, parallel downloads, built to run as a daemon with SQLite state tracking.
 - **[bambutop](https://github.com/rhoopr/bambutop)** — A terminal UI for monitoring Bambu Lab 3D printers.
 
 ### Background
