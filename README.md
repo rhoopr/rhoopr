@@ -1,6 +1,8 @@
 # Hey, I'm Rob 👋
 
-**Sr. Technical Program Manager @ Scala Computing** — I ship complex software. Network simulation, distributed systems, AI infra at data center scale.
+**Sr. Technical Program Manager [@scala-computing](https://github.com/scala-computing)**
+
+I ship complex software.  Network simulation, distributed systems, AI infra at data center scale.
 
 Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I still like to stay close to the code.
 
@@ -13,6 +15,6 @@ Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I stil
 
 ### Background
 
-10+ years across SaaS, startups, and infrastructure software. Started as a developer, grew into program leadership. Penn State IST.
+10+ years across SaaS, startups, and infra software. Started as a developer, grew into program leadership. Penn State IST.
 
 [![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/github@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:github@robhooper.xyz)
