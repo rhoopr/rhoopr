@@ -8,7 +8,7 @@ I filled in GitHub's support form. They auto-responded asking me to resubmit ess
 
 ## A bug along the way
 
-While I was locked out, I noticed that my Homebrew taps were broken, which makes sense. But the error message Homebrew showed to *end users* trying to install from my tap said something like "Your GitHub account is suspended." The word "Your" is doing some wrong work there. That's the installing user's session, not mine. There's a bug somewhere in that chain.
+While I was locked out, I noticed that my Homebrew taps were broken, which makes sense. But the error message Homebrew showed to *end users* trying to install from my tap said something like "Your GitHub account is suspended." The word "Your" is doing some wrong work there. That's the installing user's session, not mine. 🤷‍♂️.
 
 ## Resolution
 
@@ -22,16 +22,16 @@ No detail on what triggered it.
 
 I don't know. A few theories:
 
-**The .xyz domain theory.** I use an `.xyz` email address for my GitHub account. Separately, I also got instantly banned trying to sign up for Claude Code with that same domain a while back. I didn't pursue that one since it was a fresh account, but two separate platforms flagging the same email is a pattern. Maybe `.xyz` is considered a low-trust TLD. I'm considering moving off of it.
+**.xyz domain?** I use an `.xyz` email address for my GitHub account. Separately, I also got instantly banned trying to sign up for Claude with that same domain a while back. I didn't pursue that one since it was a fresh account, but two separate platforms flagging the same email is a pattern. Maybe `.xyz` is considered a low-trust TLD. I'm considering moving off of it.
 
-**The automated takedown theory.** My [bambutop](https://github.com/rhoopr/bambutop) repo interfaces with Bambu Lab printers, and I wondered if Bambu Lab filed some kind of automated takedown. But there are plenty of public repos doing similar things with their local APIs, so this seems unlikely.
+**Automated takedown?** My [bambutop](https://github.com/rhoopr/bambutop) repo interfaces with Bambu Lab printers, and I wondered if Bambu Lab filed some kind of automated takedown. But there are plenty of public repos doing similar things with their local APIs, so this seems unlikely.
 
-**The fingerprinting theory.** I use AdGuard DNS and privacy-focused browser extensions. Maybe GitHub's systems flagged the inconsistent fingerprints across my login sessions.
+**Fingerprinting?** I use AdGuard DNS and privacy-focused browser extensions. Maybe GitHub's systems flagged the inconsistent fingerprints across my login sessions.
 
 ## Takeaways
 
-The whole process was ambiguous and unexplained. There was no notification on suspension, a canned auto-response from support, no communication for over a week, and a vague one-liner when it was resolved.
+The whole process was ambiguous and unexplained. There was no notification on suspension, a canned auto-response from support, no communication for over a week (I've seen Reddit posts of >90 days, so I'm one of the lucky ones), and a vague one-liner when it was resolved.
 
-If you depend on GitHub for distribution (Homebrew taps, GitHub Pages, etc.), it's worth knowing that an automated flag can take all of that offline without warning. Hopefully this didn't scare off the handful of users who depend on my repos.
+If you depend on GitHub for distribution (Homebrew taps, GitHub Pages, etc.), it's worth knowing that an automated flag can take all of that offline without warning. Hopefully this didn't scare off the (small) handful of users who utilize my repos.
 
-Incidentally, one of the projects I'm working on is [icloudpd-rs](https://github.com/rhoopr/icloudpd-rs), a tool for downloading your iCloud photos to local storage. The cloud is just other people's computers, and this whole experience is a good reminder to make sure you're not fully reliant on it. Have good backups.
+Incidentally, one of the projects I'm working on is [icloudpd-rs](https://github.com/rhoopr/icloudpd-rs), a tool for downloading your iCloud photos to local storage. There is no cloud, it's just other people's computers, and this whole experience is a good reminder to make sure you're not fully reliant on it. Have good backups.
