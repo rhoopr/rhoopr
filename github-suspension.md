@@ -22,7 +22,7 @@ No detail on what triggered it.
 
 I don't know. A few theories:
 
-**The .xyz domain theory.** I use an `.xyz` email address for my GitHub account. Around the same time, I also got instantly banned trying to sign up for Claude Code with that same domain. I didn't pursue that one since it was a fresh account, but two separate platforms flagging the same email is a pattern. Maybe `.xyz` is considered a low-trust TLD. I'm considering moving off of it.
+**The .xyz domain theory.** I use an `.xyz` email address for my GitHub account. Separately, I also got instantly banned trying to sign up for Claude Code with that same domain a while back. I didn't pursue that one since it was a fresh account, but two separate platforms flagging the same email is a pattern. Maybe `.xyz` is considered a low-trust TLD. I'm considering moving off of it.
 
 **The automated takedown theory.** My [bambutop](https://github.com/rhoopr/bambutop) repo interfaces with Bambu Lab printers, and I wondered if Bambu Lab filed some kind of automated takedown. But there are plenty of public repos doing similar things with their local APIs, so this seems unlikely.
 
