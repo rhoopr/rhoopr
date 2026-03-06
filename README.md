@@ -17,4 +17,8 @@ Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I stil
 
 I started coding with mIRCScript when I was 12. After that, almost 20 years professionally across SaaS, startups, and infra software. Started as a developer, grew into program leadership. Penn State IST.
 
+### Writing
+
+- [I Got Suspended from GitHub for 10 Days](https://robhooper.xyz/github-suspension)
+
 [![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/github@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:github@robhooper.xyz)
