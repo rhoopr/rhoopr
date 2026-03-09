@@ -6,6 +6,11 @@ I ship complex software.  Network simulation, distributed systems, AI infra at d
 
 Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I still like to stay close to the code.
 
+### Blog
+
+- [GitHub Is a Single Point of Failure (I Got Auto-Suspended 🫠)](https://robhooper.xyz/github-suspension)
+
+
 ### What I'm building
 
 ![Rust](https://shields.io/badge/-Rust-2D2B28?logo=rust&logoColor=DEA584) [![Claude](https://img.shields.io/badge/Claude%20Code-2D2B28?logo=claude)](#)
@@ -15,10 +20,7 @@ Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I stil
 
 ### Background
 
-I started coding with mIRCScript when I was 12. After that, almost 20 years professionally across SaaS, startups, and infra software. Started as a developer, grew into program leadership. Penn State IST.
-
-### Writing
-
-- [I Got Suspended from GitHub for 10 Days](https://robhooper.xyz/github-suspension)
+- I started coding with mIRCScript when I was 12. After that, almost 20 years professionally across SaaS, startups, and infra software. Started as a developer, grew into program leadership. Penn State IST.
+  
 
 [![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/github@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:github@robhooper.xyz)
