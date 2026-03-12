@@ -7,7 +7,7 @@ date: 2026-03-11
 
 # 10 Years Later, I Reverse-Engineered iCloud's syncToken by Brute Force
 
-In the source code of pyicloud, the Python library behind many open-source iCloud Photos tools, there's a comment that's been sitting untouched for roughly a decade:
+In the source code of pyicloud, the Python library behind many open-source iCloud Photos tools, there's [a comment](https://github.com/picklepete/pyicloud/blob/09fb9ba9911b8001d940fb14ce3e7c71a9dfdf94/pyicloud/services/photos.py#L153) that's been sitting untouched for roughly a decade:
 
 ```python
 # TODO: Does syncToken ever change?
@@ -31,7 +31,7 @@ The only "documentation" for the Photos-specific layer is the source code of too
 
 ## The Testing Methodology (And the Rate Limits)
 
-There's no sandbox for Apple's private API, so every test ran against a real iCloud account with a real photo library. Too many calls too quickly gets you HTTP 503 responses or temporary session blocks. I used [Claude Code](https://docs.anthropic.com/en/docs/claude-code) to drive the iterative test-and-compare cycle - crafting requests, diffing responses, and tracking which properties had been tested across sessions.
+There's no sandbox for Apple's private API, so every test ran against a real iCloud account with a real photo library. Too many calls too quickly gets you HTTP 503 responses or temporary session blocks. I used Claude Code to drive the iterative test-and-compare cycle - crafting requests, diffing responses, and tracking which properties had been tested across sessions.
 
 1. Observe and probe. The standard `records/query` response includes a `syncToken` field. If it's a change bookmark, there should be an endpoint that accepts it. Apple's public CloudKit has `/changes/zone`. The private API does too, and it accepts the token.
 
