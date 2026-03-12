@@ -55,7 +55,7 @@ CloudKit organizes data into "zones" - isolated containers within a database. iC
 
 It's a persistent, deterministic, replayable bookmark that you can store on disk and use days later, even after re-authenticating - tokens survive session refresh. It supports random access too: I saved a token from page 2, continued to page 10, then jumped back to the page 2 token and got the same data as the first time through.
 
-The detail that makes the whole scheme work at zero cost: the syncToken that `records/query` returns is the *exact same format* as the token used by `/changes/zone`. They're interchangeable. I took a token from a `records/query` response and passed it directly to `/changes/zone`, and it accepted it without error and returned valid change records. So the first full scan - the one every tool already does - produces a usable change-tracking token for free. The token has been sitting in every `records/query` response, in every tool, for years, but Apple doesn't publish what it does, so there was no reason to capture it.
+Here's what makes it free: the syncToken that `records/query` returns is the *exact same format* as the token used by `/changes/zone`. They're interchangeable. I took a token from a `records/query` response and passed it directly to `/changes/zone`, and it accepted it without error and returned valid change records. So the first full scan - the one every tool already does - produces a usable change-tracking token for free. The token has been sitting in every `records/query` response, in every tool, for years, but Apple doesn't publish what it does, so there was no reason to capture it.
 
 ### Three Endpoints
 
@@ -67,13 +67,11 @@ The detail that makes the whole scheme work at zero cost: the syncToken that `re
 
 ### Deletion Is Two Different Things
 
-This will bite anyone implementing sync without knowing about it.
-
 When a user deletes a photo in the Photos app, it goes to "Recently Deleted" (a 30-day trash). In the API, the record is *modified*, not removed. The top-level `deleted` flag on the record is `false`. The actual signal is buried in a field inside the record: `fields.isDeleted.value == 1`. All the photo's metadata, download URLs, everything is still there - the record just has this flag flipped. In my testing, deleting 5 photos produced 10 modified records (a CPLMaster and CPLAsset for each photo), all with `deleted: false` at the record level. If you only check the record's `deleted` flag, you miss every user-initiated deletion.
 
 After 30 days (or if the user manually empties "Recently Deleted"), records are purged for real. Now `deleted` is `true`, the record type is `null`, and all fields are gone - you can't even tell what kind of record it was. Apple retains a lot of this purge history: 15,618 hard-deleted records out of 42,787 total in my ~7,300 photo library, or about 36% of the zone's history.
 
-Then there's a field value inconsistency that will quietly break any generic handling. The `isDeleted` field uses `null` to mean "not deleted," while the similar `isHidden` and `isFavorite` fields use `0` to mean "not hidden" / "not favorited." Restoring a photo from trash sets `isDeleted` back to `null`, not `0`. Un-hiding a photo sets `isHidden` to `0`, not `null`. Three fields with identical semantics, two different conventions. Presumably shipped by different teams.
+Then there's a field value inconsistency that will break any generic handling. The `isDeleted` field uses `null` to mean "not deleted," while the similar `isHidden` and `isFavorite` fields use `0` to mean "not hidden" / "not favorited." Restoring a photo from trash sets `isDeleted` back to `null`, not `0`. Un-hiding a photo sets `isHidden` to `0`, not `null`. Three fields with identical semantics, two different conventions. Presumably shipped by different teams.
 
 One more gotcha for implementers: sending an empty string as the syncToken and omitting the syncToken field entirely produce completely different behavior. Empty string means "I'm caught up, what's new?" and returns nothing. Omitting it means "start from the beginning" and triggers a full history enumeration. It's easy to conflate the two.
 
@@ -81,7 +79,7 @@ One more gotcha for implementers: sending an empty string as the syncToken and o
 
 Apple's iCloud Shared Photo Library (the family-wide one, not traditional shared albums you create and invite people to) lives in its own CloudKit zone called `SharedSync-{UUID}`. The UUID is unique per shared library and must be discovered dynamically via the `/zones/list` endpoint.
 
-One thing that tripped me up: the Shared Library zone lives under the `/private` endpoint. The `/shared` endpoint returns an empty response: no error, just nothing.
+The Shared Library zone lives under the `/private` endpoint, which isn't obvious. The `/shared` endpoint returns an empty response: no error, just nothing.
 
 The same sync mechanics apply - same endpoints, same token behavior, same record types. SharedSync adds a `contributors` field to track who added each photo, and `deletedBy` to track who removed it.
 
@@ -126,7 +124,7 @@ That TODO is old, but the question it asks is genuinely hard to answer.
 
 The Photos-specific layer is undocumented. Apple documents the generic CloudKit Web Services protocol, but nothing about how iCloud Photos uses it - the record types, field schemas, deletion semantics, and zone behaviors are all specific to iCloud Photos and not described anywhere. You can only figure them out by testing against a real account, spending real API calls, and hoping you don't hit a rate limit in the middle of a multi-step test sequence.
 
-The existing tools made reasonable design choices. icloudpd has a deliberate stateless architecture: it looks at the filesystem to decide what to download, which keeps things simple and predictable. That design has served thousands of users well. Adding syncToken support means introducing persistent state (a database), which is a meaningful architectural shift.
+Existing tools made reasonable design choices. icloudpd has a deliberate stateless architecture: it looks at the filesystem to decide what to download, which keeps things simple and predictable. That design has served thousands of users well. Adding syncToken support means introducing persistent state (a database), which is a big change.
 
 The token behavior also has non-obvious edge cases that could silently corrupt a sync implementation. The empty-string-vs-omitted distinction. Separate, incompatible token namespaces for database-level and zone-level queries. Sixty-nine consecutive empty pages during enumeration (nice). Inconsistent null-vs-zero conventions on boolean-like fields. A server-side record type filter that silently returns wrong results on one endpoint but works fine on another. You don't find these without systematic testing.
 
