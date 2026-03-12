@@ -31,7 +31,7 @@ The only "documentation" for the Photos-specific layer is the source code of too
 
 ## The Testing Methodology (And the Rate Limits)
 
-There's no sandbox for Apple's private API, so every test ran against a real iCloud account with a real photo library. Too many calls too quickly gets you HTTP 503 responses or temporary session blocks.
+There's no sandbox for Apple's private API, so every test ran against a real iCloud account with a real photo library. Too many calls too quickly gets you HTTP 503 responses or temporary session blocks. I used [Claude Code](https://docs.anthropic.com/en/docs/claude-code) to drive the iterative test-and-compare cycle - crafting requests, diffing responses, and tracking which properties had been tested across sessions.
 
 1. Observe and probe. The standard `records/query` response includes a `syncToken` field. If it's a change bookmark, there should be an endpoint that accepts it. Apple's public CloudKit has `/changes/zone`. The private API does too, and it accepts the token.
 
@@ -83,7 +83,7 @@ The Shared Library zone lives under the `/private` endpoint, which isn't obvious
 
 The same sync mechanics apply - same endpoints, same token behavior, same record types. SharedSync adds a `contributors` field to track who added each photo, and `deletedBy` to track who removed it.
 
-I tested the cross-zone behavior with another family member making changes in real time. When *you* add a photo to the shared library, records appear in *both* your PrimarySync (personal) zone and the SharedSync zone. When *someone else* adds a photo, records appear only in SharedSync - your personal zone's delta is empty, and zone isolation is complete for other people's actions.
+I tested the cross-zone behavior with my wife making changes in real time. When *you* add a photo to the shared library, records appear in *both* your PrimarySync (personal) zone and the SharedSync zone. When *someone else* adds a photo, records appear only in SharedSync - your personal zone's delta is empty, and zone isolation is complete for other people's actions.
 
 Removal from the shared library has a subtle distinction controlled by a single field. When someone removes a photo, `isDeleted` is `1` in both cases - whether they moved it back to their personal library or actually deleted it. The `trashReason` field is what separates the two: absent means "moved to personal library, still exists somewhere," while `1` means "actually deleted, going to trash for 30 days." Without checking `trashReason`, those two operations look identical in the API response.
 
@@ -126,7 +126,7 @@ The Photos-specific layer is undocumented. Apple documents the generic CloudKit 
 
 Existing tools made reasonable design choices. icloudpd has a deliberate stateless architecture: it looks at the filesystem to decide what to download, which keeps things simple and predictable. That design has served thousands of users well. Adding syncToken support means introducing persistent state (a database), which is a big change.
 
-The token behavior also has non-obvious edge cases that could silently corrupt a sync implementation. The empty-string-vs-omitted distinction. Separate, incompatible token namespaces for database-level and zone-level queries. Sixty-nine consecutive empty pages during enumeration (nice). Inconsistent null-vs-zero conventions on boolean-like fields. A server-side record type filter that silently returns wrong results on one endpoint but works fine on another. You don't find these without systematic testing.
+The token behavior also has non-obvious edge cases that could silently corrupt a sync implementation. The empty-string-vs-omitted distinction. Separate, incompatible token namespaces for database-level and zone-level queries. Sixty-nine consecutive empty pages during enumeration (nice). Inconsistent null-vs-zero conventions on boolean-like fields. A server-side record type filter that silently returns wrong results on one endpoint but works fine on another. You don't find these without systematic testing, and doing it by hand would be brutal. Having Claude Code automate the test-and-compare loop made it practical to rapid-fire API variations and track results across hundreds of calls.
 
 ---
 
