@@ -8,7 +8,7 @@ Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I stil
 
 ### Blog
 
-- [10 Years Later, I Reverse-Engineered iCloud’s syncToken by Brute Force](https:/robhooper.xyz/blog-synctoken)
+- [10 Years Later, I Reverse-Engineered iCloud’s syncToken by Brute Force](https://robhooper.xyz/blog-synctoken)
 - [GitHub Is a Single Point of Failure (I Got Auto-Suspended 🫠)](https://robhooper.xyz/github-suspension)
 
 
