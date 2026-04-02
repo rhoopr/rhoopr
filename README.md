@@ -8,7 +8,7 @@ Sr. TPM at [@scala-computing](https://github.com/scala-computing), where I work 
 
 ![Rust](https://shields.io/badge/-Rust-2D2B28?logo=rust&logoColor=DEA584) [![Claude](https://img.shields.io/badge/Claude%20Code-2D2B28?logo=claude)](#)
 
-- **[kei](https://github.com/rhoopr/kei)** - Photo sync engine. Downloads your iCloud library in parallel, tracks state in SQLite, runs as a daemon. Google Takeout and Immich support coming.
+- **[kei](https://github.com/rhoopr/kei)** - Photo sync engine. Downloads your library in parallel, tracks state in SQLite, runs as a daemon.
 - **[bambutop](https://github.com/rhoopr/bambutop)** - Terminal UI for monitoring Bambu Lab 3D printers.
 
 ### Writing
