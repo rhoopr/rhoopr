@@ -1,28 +1,17 @@
-# Hey, I'm Rob 👋
+# Rob Hooper
 
-**Sr. Technical Program Manager [@scala-computing](https://github.com/scala-computing)**
+Sr. TPM at [@scala-computing](https://github.com/scala-computing), where I work on network simulation at data center scale for AI workloads. Been coding since mIRCScript at 12, went dev to TPM, and now I build side projects with Claude Code.
 
-I ship complex software.  Network simulation, distributed systems, AI infra at data center scale.
+[![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/github@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:github@robhooper.xyz) [![Web](https://img.shields.io/badge/robhooper.xyz-2D2B28?logo=safari&logoColor=white)](https://robhooper.xyz)
 
-Before I ran programs, I wrote them (C++, C#, MATLAB, APIs on Azure/SAP). I still like to stay close to the code.
-
-### Blog
-
-- [10 Years Later, I Reverse-Engineered iCloud’s syncToken by Brute Force](https://robhooper.xyz/blog-synctoken)
-- [GitHub Is a Single Point of Failure (I Got Auto-Suspended 🫠)](https://robhooper.xyz/github-suspension)
-
-
-### What I'm building
+### Projects
 
 ![Rust](https://shields.io/badge/-Rust-2D2B28?logo=rust&logoColor=DEA584) [![Claude](https://img.shields.io/badge/Claude%20Code-2D2B28?logo=claude)](#)
 
-- **[icloudpd-rs](https://github.com/rhoopr/icloudpd-rs)** — A Rust rewrite of icloudpd. Single binary, parallel downloads, run as a stateful daemon.
-- **[bambutop](https://github.com/rhoopr/bambutop)** — A terminal UI for monitoring Bambu Lab 3D printers.
+- **[kei](https://github.com/rhoopr/kei)** - Photo sync engine. Downloads your iCloud library in parallel, tracks state in SQLite, runs as a daemon. Google Takeout and Immich support coming.
+- **[bambutop](https://github.com/rhoopr/bambutop)** - Terminal UI for monitoring Bambu Lab 3D printers.
 
-### Background
+### Writing
 
-I started coding with mIRCScript when I was 12. After that, almost 20 years professionally across SaaS, startups, and infra software. Started as a developer, grew into program leadership. Penn State IST.
-
-
-
-[![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/github@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:github@robhooper.xyz)
+- [10 Years Later, I Reverse-Engineered iCloud’s syncToken by Brute Force](https://robhooper.xyz/blog-synctoken)
+- [GitHub Is a Single Point of Failure (I Got Auto-Suspended 🫠)](https://robhooper.xyz/github-suspension)
