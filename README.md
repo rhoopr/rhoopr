@@ -2,7 +2,7 @@
 
 Sr. TPM at [@scala-computing](https://github.com/scala-computing), where I work on network simulation at data center scale for AI workloads. Been coding since mIRCScript at 12, went dev to TPM, and now I'm having fun on side projects with Claude Code.
 
-[![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/github@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:github@robhooper.xyz) [![Web](https://img.shields.io/badge/robhooper.xyz-2D2B28?logo=safari&logoColor=white)](https://robhooper.xyz)
+[![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/github@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:github@robhooper.xyz) [![Web](https://img.shields.io/badge/robhooper.xyz-2D2B28?logo=safari&logoColor=white)](https://robhooper.xyz) [![Stars](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github-star-counter.workers.dev%2Fuser%2Frhoopr&query=%24.stars&label=stars&color=2D2B28&logo=github&logoColor=white)](https://github.com/rhoopr)
 
 ### Projects
 
