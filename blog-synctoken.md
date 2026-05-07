@@ -3,6 +3,7 @@ title: "iCloud Photos' syncToken, Reverse-Engineered"
 description: "A decade-old TODO in pyicloud asked whether Apple's iCloud syncToken ever changes. I brute-forced the undocumented API to find out. The answer makes photo sync 75x more efficient."
 author: Rob Hooper
 date: 2026-03-11
+image: https://avatars.githubusercontent.com/u/239364548?v=4
 ---
 
 # iCloud Photos' syncToken, Reverse-Engineered
