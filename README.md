@@ -6,7 +6,7 @@ Sr. TPM at [@scala-computing](https://github.com/scala-computing), where I work 
 
 ### Projects
 
-![Rust](https://shields.io/badge/-Rust-2D2B28?logo=rust&logoColor=DEA584) [![Ollama](https://img.shields.io/badge/-Ollama-2D2B28?style=flat&logo=ollama&logoColor=white)](https://ollama.com/library/deepseek-v4-pro) <a href="http://pi.dev"><img src="https://pi.dev/favicon.svg" height=20 alt="Pi.dev"></a>
+[![Rust](https://shields.io/badge/-Rust-2D2B28?logo=rust&logoColor=DEA584)](https://rust-lang.org/) [![Ollama](https://img.shields.io/badge/-Ollama-2D2B28?style=flat&logo=ollama&logoColor=white)](https://ollama.com/library/deepseek-v4-pro) <a href="http://pi.dev"><img src="https://pi.dev/favicon.svg" height=20 alt="Pi.dev"></a>
 
 - **[kei](https://github.com/rhoopr/kei)** - Media sync engine for photos and videos. Parallel downloads, incremental syncs, unattended Docker operation.
 - **[bambutop](https://github.com/rhoopr/bambutop)** - Terminal UI for monitoring Bambu Lab 3D printers.
