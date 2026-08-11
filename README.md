@@ -1,6 +1,6 @@
 # Rob Hooper
 
-Sr. TPM at [@scala-computing](https://github.com/scala-computing), where I work on network simulation at data center scale for AI workloads. Been coding since mIRCScript at 12, went dev to TPM, and now I'm having fun tinkering on side projects.
+MTS, TPM at [Anchorage Digital(https://www.anchorage.com), where I work on digital asset and banking infrastucture. Been coding since mIRCScript at 12, went dev to TPM, and now I'm having fun tinkering on side projects.
 
 [![LinkedIn](https://img.shields.io/badge/in/rwh-0A66C2?logo=googledocs&logoColor=white)](https://www.linkedin.com/in/rwh) [![Email](https://img.shields.io/badge/github@robhooper.xyz-2D2B28?logo=minutemailer&logoColor=white)](mailto:github@robhooper.xyz) [![Web](https://img.shields.io/badge/robhooper.xyz-2D2B28?logo=safari&logoColor=white)](https://robhooper.xyz)
 
