@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} — Rob Hooper</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <meta name="theme-color" content="#080a06">
+  <link rel="canonical" href="{{ page.url | remove: '.html' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/flyer.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/article.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#article">Skip to article</a>
+  <div class="article-shell">
+    <header class="article-header"><a href="{{ '/' | relative_url }}">ROB HOOPER</a><span>TECHNICAL PROGRAMS / OPEN SOURCE</span></header>
+    <main id="article" class="article-copy">{{ content }}</main>
+    <footer class="article-footer"><a href="{{ '/' | relative_url }}">← BACK TO THE FLYER</a><a href="mailto:github@robhooper.xyz">GET IN TOUCH</a></footer>
+  </div>
+</body>
+</html>

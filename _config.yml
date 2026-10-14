@@ -1,0 +1,16 @@
+title: Rob Hooper
+url: https://robhooper.xyz
+description: Technical programs / Open source. New Jersey.
+markdown: kramdown
+defaults:
+  - scope:
+      path: blog-synctoken.md
+    values:
+      layout: article
+  - scope:
+      path: github-suspension.md
+    values:
+      layout: article
+      title: "GitHub Is a Single Point of Failure (I Got Auto-Suspended 🫠)"
+exclude:
+  - assets/README.md

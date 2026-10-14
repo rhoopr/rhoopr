@@ -1,0 +1,23 @@
+.article-shell{max-width:880px;margin:0 auto;padding:36px 28px 48px}
+.article-header{border-bottom:4px solid var(--paper);padding-bottom:20px;margin-bottom:40px;display:flex;gap:20px;align-items:center;justify-content:space-between}
+.article-header a{font:44px/1 Anton,Impact,sans-serif;text-decoration:none;white-space:nowrap}
+.article-header span{font-size:13px;max-width:240px;text-align:right}
+.article-copy{color:#eee7cf;font:19px/1.7 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-wrap:anywhere}
+.article-copy h1,.article-copy h2,.article-copy h3{color:var(--paper);font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:750;letter-spacing:-.03em;max-width:100%;width:auto;line-height:1.15;transform:none}
+.article-copy h1{font-size:clamp(32px,5vw,52px);margin:0 0 28px}
+.article-copy h2{font-size:30px;margin:40px 0 16px}
+.article-copy h3{font-size:24px;margin:32px 0 12px}
+.article-copy p,.article-copy ul,.article-copy ol,.article-copy blockquote{margin:0 0 24px}
+.article-copy a{color:var(--paper)}
+.article-copy hr{border:0;border-top:1px solid #7a6b36;margin:36px 0}
+.article-copy code{font-family:'Courier New',monospace;font-size:.9em;background:#1e2118;padding:2px 4px}
+.article-copy pre{overflow-x:auto;background:#171a12;border-left:3px solid var(--paper);padding:18px;font-size:16px;line-height:1.55;margin:24px 0;max-width:100%;white-space:pre}
+.article-copy pre code{background:none;padding:0}
+.article-copy blockquote{border-left:3px solid var(--paper);padding:4px 20px;color:#e4d6a4}
+.article-copy blockquote p:last-child{margin-bottom:0}
+.article-copy img{max-width:100%;height:auto}
+.article-copy table{display:block;overflow-x:auto;border-collapse:collapse;max-width:100%;font-size:16px;margin:24px 0}
+.article-copy th,.article-copy td{padding:10px 14px;border:1px solid #7a6b36;text-align:left;min-width:120px}
+.article-copy th{color:var(--paper)}
+.article-footer{border-top:4px solid var(--paper);padding-top:22px;margin-top:44px;display:flex;justify-content:space-between;gap:20px;font-size:15px}
+@media(max-width:480px){.article-shell{padding:24px 18px 32px}.article-header{display:block;margin-bottom:28px}.article-header a{font-size:36px}.article-header span{display:block;text-align:left;margin-top:12px;max-width:none;font-size:11px}.article-copy{font-size:18px;line-height:1.65}.article-copy h2{font-size:27px}.article-copy h3{font-size:23px}.article-copy pre{font-size:14px;padding:12px}.article-footer{font-size:12px}}
